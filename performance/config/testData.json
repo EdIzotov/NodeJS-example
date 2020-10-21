@@ -1,0 +1,223 @@
+{
+  "identitiesAndAccounts": {
+    "create": true,
+    "entity1": {
+      "masterChain": "CgQIARAAEixaWGJNU3R1Uk9qUHhXQUdWbE40SGRyZG1OZ21oTHNMNXUxSTBGOW1pUG04PRgBIAE=",
+      "sideChain": "CgQIARAAEixvNDBjV1BjR2RQVmlMSkd6OVdzakkyRDlERVNZVFg3WHBnT2tJSDNsTnNBPRgBIAE="
+    },
+    "entity2": {
+      "masterChain": "CgQIARAAEixYZTg5UzFHZ0Nlb25jQithTHlRK2t3WEF6bXlBUGdUU2FQSWpMTlVZZmQ0PRgBIAE=",
+      "sideChain": "CgQIARAAEix5cURjelVCNzVsNXpxMFhaRW1xWUpBd1R0ZmVDWHRGYnF1ZjZCVlVuZE5NPRgBIAE="
+    }
+  },
+  "tests": [
+    {
+      "type": "balance",
+      "workers": 1,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 1
+    },
+    {
+      "type": "balance",
+      "workers": 1,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 100
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 100
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 5,
+      "keep_alive": 5,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 15,
+      "keep_alive": 10,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 10,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 20,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "balance",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 25,
+      "requestsPerWorker": 10000
+    },
+    {
+      "type": "trx",
+      "workers": 1,
+      "concurrencySAP": 10,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 50,
+	    "identities": 2,
+	    "accounts": 2,
+  	  "transactions": 100,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 10
+    },
+    {
+      "type": "trx",
+      "workers": 1,
+      "concurrencySAP": 20,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 50,
+	    "identities": 5,
+	    "accounts": 10,
+  	  "transactions": 100,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 1,
+      "concurrencySAP": 20,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 50,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 1000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 1,
+      "concurrencySAP": 20,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 50,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 10000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 4,
+      "concurrencySAP": 20,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 100,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 1000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 4,
+      "concurrencySAP": 20,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 1000,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 10000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 4,
+      "concurrencySAP": 100,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 1000,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 100000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "trx",
+      "workers": 4,
+      "concurrencySAP": 200,
+	    "concurrencyCBS": 1,
+	    "warm_up_transactions": 1000,
+	    "identities": 10,
+	    "accounts": 20,
+  	  "transactions": 100000,
+  	  "turn_on_cbs_north_api_mock_mode": 1,
+      "keep_alive": 20
+    },
+    {
+      "type": "history",
+      "workers": 1,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 1
+    },
+    {
+      "type": "history",
+      "workers": 1,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 100
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 1,
+      "keep_alive": 5,
+      "requestsPerWorker": 100
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 5,
+      "keep_alive": 5,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 15,
+      "keep_alive": 10,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 10,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 20,
+      "requestsPerWorker": 1000
+    },
+    {
+      "type": "history",
+      "workers": 4,
+      "concurrency": 25,
+      "keep_alive": 25,
+      "requestsPerWorker": 10000
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "tmp": {
+        "username": "root",
+        "password": "baranka4ka",
+        "privateKey": "./data/qa.pem"
+    },
+    "test": {
+        "username": "qa",
+        "port": "22001",
+        "privateKey": "{dirname}/data/qa.pem"
+    }
+}

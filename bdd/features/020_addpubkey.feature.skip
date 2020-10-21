@@ -1,0 +1,38 @@
+# features/create_bank.feature
+Feature: Addpubkey
+    pubkey
+
+    Background: prepare
+        Given Prepare data for сreate bank: Bank4Test
+        And Request to CBS API -> Create bank
+        And Check result 200
+
+        Given Prepare data for create private identity
+            | firstName      | TestIdentity1            |
+            | lastName       | TestIdentity1            |
+            | phoneNumber    | 0991910757               |
+            | passportNumber | AA010101                 |
+            | dateOfBirth    | 2017-04-13T12:57:36.232Z |
+            | nationality    | UA                       |
+        And Request to CBS API -> Create private identity
+        And Check response from create private identity
+
+        Given Prepare data for create account
+            | currency         | EUR  |
+            | currentBalance   | 1000 |
+            | availableBalance | 1000 |
+            | spendingLimit    | 0    |
+        And Request to CBS API -> Create account
+        And Check response from create account
+
+        Given Prepare data for create QR
+        And Request to CBS API -> create QR
+        And Check response from create QR
+
+    Scenario: request to SAP addpubkey
+        Given Prepare data for addpubkey
+            | keyId | 1 |
+
+        When Request to SAP API -> addpubkey
+        Then Check SAP addpubkey response
+

@@ -1,0 +1,10 @@
+{
+    "testTimeout": 150000,
+    "beforeTestTimeout": 30000,
+    "defaultCbsCredentials": {
+        "username": "qa_user",
+        "password": "qa_user",
+        "description":
+            "For authorize on CBS rundeck, because as the config is used iov_env.conf, as well as for other environments if in config empty user credentials"
+    }
+}

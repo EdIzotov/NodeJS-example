@@ -1,0 +1,22 @@
+# features/create_bank.feature
+Feature: Create Identity
+    New Identity
+
+    Background: prepare
+        Given Prepare data for сreate bank: Bank4Test
+        And Request to CBS API -> Create bank
+        And Check result 200
+
+    Scenario: request to CBS
+        Given Prepare data for create private identity
+            | firstName      | TestIdentity             |
+            | lastName       | TestIdentity             |
+            | phoneNumber    | 0991910757               |
+            | passportNumber | AA010101                 |
+            | dateOfBirth    | 2017-04-13T12:57:36.232Z |
+            | nationality    | UA                       |
+
+        When Request to CBS API -> Create private identity
+        Then Check response from create private identity
+
+

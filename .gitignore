@@ -1,0 +1,12 @@
+/node_modules/
+/nbproject/
+/backup/backup.*
+npm-debug.log
+/.git_*
+/.idea/
+/iov_env.conf
+/tmp/
+/.eslintrc.json
+/package-lock.json
+/report/cucumber_*
+.vscode/

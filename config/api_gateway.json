@@ -1,0 +1,94 @@
+{
+  "api": {
+    "createAccount": {
+      "path": "/assets/accounts",
+      "method": "post",
+      "description": "Create contract account via API Gateway",
+      "expect": "body(200 OK)"
+    },
+    "creditAccount": {
+      "path": "/assets/transactions/credits",
+      "method": "post",
+      "description": "Credit account via API Gateway",
+      "expect": "body(200 OK)"
+    },
+    "accountDetails": {
+      "path": "/assets/accounts/{account_address}",
+      "method": "get",
+      "description": "Get details about an account (e.g. the current and available balance)",
+      "expect": "body(200 OK)"
+    },
+    "getOwners": {
+      "path": "/assets/accounts/{account_address}/owners",
+      "method": "get",
+      "description": "Get details about an account (e.g. the current and available balance)",
+      "expect": "body(200 OK)"
+    },
+    "addOwner": {
+      "path": "/assets/accounts/{account_address}/owners",
+      "method": "post",
+      "description": "Get details about an account (e.g. the current and available balance)",
+      "expect": "body(200 OK)"
+    },
+    "removeOwner": {
+      "path": "/assets/accounts/{account_address}/owners/{owner_address}",
+      "method": "delete",
+      "description": "Remove an owner from the specified account.",
+      "expect": "body(200 OK)"
+    },
+    "addPublicKey": {
+      "path": "/identities/identities/{identity_address}/public-keys",
+      "method": "post",
+      "description": "Add public key to Identity",
+      "expect": "body(200 OK)"
+    },
+    "removePublicKey": {
+      "path": "/identities/identities/{identity_address}/public-keys/{key_reference}",
+      "method": "delete",
+      "description": "Remove public key",
+      "expect": "body(200 OK)"
+    },
+    "uploadTemplate": {
+      "path": "/services/templates",
+      "method": "post",
+      "description": "Upload contract template via API GW",
+      "expect": "body(200 OK)"
+    },
+    "createContract": {
+      "path": "/services/contracts",
+      "method": "post",
+      "description": "Create contract instance via API GW",
+      "expect": "body(200 OK)"
+    },
+    "queryContract": {
+      "path": "/services/contracts/{contract_address}/queries",
+      "method": "post",
+      "description": "Query contract instance via API GW",
+      "expect": "body(200 OK)"
+    },
+    "updateContract": {
+      "path": "/services/contracts/{contract_address}/updates",
+      "method": "post",
+      "description": "Update contract via API GW",
+      "expect": "body(200 OK)"
+    },
+    "createTransfer": {
+      "path": "/assets/transactions/transfers",
+      "method": "post",
+      "description": "Create transaction",
+      "expect": "body(200 OK)"
+    },
+    "getTransfer": {
+      "path": "/assets/accounts/{account_address}/transactions/{transaction_id}",
+      "method": "get",
+      "description": "Get transaction status",
+      "expect": "body(200 OK)"
+    },
+    "getTransactionList": {
+      "path": "/assets/accounts/{account_address}/transactions?select_from={select_from}&select_to={select_to}&select_limit={select_limit}",
+      "method": "get",
+      "description": "Get transaction history",
+      "expect": "body(200 OK)"
+    }
+  }
+}

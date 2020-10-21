@@ -1,0 +1,68 @@
+{
+    "tmp": {
+        "url": "http://192.168.16.44:8002",
+        "auth": {
+            "username": "admin",
+            "password": "pass"
+        },
+        "api": {
+            "uploadTemplate": {
+                "path": "/v1/contract-template/upload",
+                "method": "post",
+                "description": "Upload contract template via SAP",
+                "expect": "body(200 OK)"
+            },
+            "contractCreate": {
+                "path": "/v1/contract/create",
+                "method": "post",
+                "description": "Send create contract request via Oracle GW",
+                "expect": "body(200 OK)"
+            },
+            "contractEvent": {
+                "path": "/v1/contract/event",
+                "method": "post",
+                "description": "Send contract event",
+                "expect": "body(200 OK)"
+            },
+            "sendTransaction": {
+                "path": "/v1/contract/event",
+                "method": "post",
+                "description": "Send transaction",
+                "expect": "body(200 OK)"
+            }
+        }
+    },
+    "test": {
+        "url": "http://192.168.16.44:8002",
+        "auth": {
+            "username": "admin",
+            "password": "pass"
+        },
+        "api": {
+            "uploadTemplate": {
+                "path": "/v1/contract-template/upload",
+                "method": "post",
+                "description": "Upload contract template via SAP",
+                "expect": "body(200 OK)"
+            },
+            "contractCreate": {
+                "path": "/v1/contract/create",
+                "method": "post",
+                "description": "Send create contract request via Oracle GW",
+                "expect": "body(200 OK)"
+            },
+            "contractEvent": {
+                "path": "/v1/contract/event",
+                "method": "post",
+                "description": "Send contract event",
+                "expect": "body(200 OK)"
+            },
+            "sendTransaction": {
+                "path": "/v1/contract/event",
+                "method": "post",
+                "description": "Send transaction",
+                "expect": "body(200 OK)"
+            }
+        }
+    }
+}

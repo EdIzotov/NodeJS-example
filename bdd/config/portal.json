@@ -1,0 +1,250 @@
+{
+    "tmp": {
+        "url": "http://192.168.16.22:9000",
+        "auth": {
+            "username": "qa_user",
+            "password": "qa_user"
+        },
+        "api": {
+            "login": {
+                "path": "/login",
+                "method": "post",
+                "description": "login",
+                "expect": "login ok"
+            },
+            "getEnv": {
+                "path": "/settings/env",
+                "method": "get",
+                "description": "Get Environment Settings",
+                "expect": ""
+            },
+            "getLayers": {
+                "path": "/static/iov/layers",
+                "method": "get",
+                "description": "all layers",
+                "expect": "layers array"
+            },
+            "getRegions": {
+                "path": "/regions",
+                "method": "get",
+                "description": "all regions",
+                "expect": "regions array"
+            },
+            "getRegionByNumber": {
+                "path": "/regions/number/{number}",
+                "method": "get",
+                "description": "Get Region by RegionNumber",
+                "expect": "200 ok"
+            },
+            "getAssethosts": {
+                "path": "/assethosts?regionId={regionId}&layerId=2",
+                "method": "get",
+                "description": "all assethosts",
+                "expect": "assethosts array"
+            },
+            "getRootIdentities": {
+                "path": "/identities/root",
+                "method": "get",
+                "description": "all root identities",
+                "expect": "root identities array"
+            },
+            "createAdminIdentity": {
+                "path": "/identities/admin",
+                "method": "post",
+                "description": "Create New Admin Identity",
+                "expect": "regions array"
+            },
+            "getSecret": {
+                "path": "/identities/{identityId}/secrets",
+                "method": "post",
+                "description": "Create New Secret For Admin Identity",
+                "expect": "200 ok"
+            },
+            "getAdminIdentities": {
+                "path": "/identities/admin",
+                "method": "get",
+                "description": "Get All Admin Identities",
+                "expect": "200 ok"
+            },
+            "updatePubkey": {
+                "path":
+                    "/identities/{identityId}/secrets/{secretId}/pubkey/add",
+                "method": "post",
+                "description": "Update Public Key",
+                "expect": "200 ok"
+            },
+            "createHash": {
+                "path": "/tool/redbox/hash",
+                "method": "post",
+                "description": "Create Hash",
+                "expect": "200 ok"
+            },
+            "createSignature": {
+                "path": "/tool/redbox/signature?redBoxId={redBoxId}",
+                "method": "post",
+                "description": "Create Signature",
+                "expect": "200 ok"
+            },
+            "getPubkey": {
+                "path": "/tool/redbox/pubkey",
+                "method": "post",
+                "description": "Get Public Key",
+                "expect": "200 ok"
+            },
+            "getSaps": {
+                "path": "/saps",
+                "method": "get",
+                "description": "Get SAPs",
+                "expect": "200 ok"
+            },
+            "health": {
+                "path": "/health",
+                "method": "get",
+                "description": "check db scheme",
+                "expect": "200 ok"
+            },
+            "checkHealth": {
+                "path": "/health/env/regions/{regionId}",
+                "method": "get",
+                "description": "check if tables is filled for :regionId",
+                "expect": "200 ok"
+            },
+            "pushNodeIdentities": {
+                "path": "/settings/env/prepare/node/{regionId}",
+                "method": "post",
+                "description": "push all node-identities to iov for :regionId",
+                "expect": "200 ok"
+            },
+            "getIovAddress": {
+                "path": "/utils/iovaddres",
+                "method": "post",
+                "description": "Get Iov-Address",
+                "expect": "200 ok"
+            }
+        }
+    },
+    "test": {
+        "url": "http://162.13.190.102:9000",
+        "auth": {
+            "username": "qa_user",
+            "password": "qa_user"
+        },
+        "api": {
+            "login": {
+                "path": "/login",
+                "method": "post",
+                "description": "login",
+                "expect": "login ok"
+            },
+            "getEnv": {
+                "path": "/settings/env",
+                "method": "get",
+                "description": "Get Environment Settings",
+                "expect": ""
+            },
+            "getLayers": {
+                "path": "/static/iov/layers",
+                "method": "get",
+                "description": "all layers",
+                "expect": "layers array"
+            },
+            "getRegions": {
+                "path": "/regions",
+                "method": "get",
+                "description": "all regions",
+                "expect": "regions array"
+            },
+            "getRegionByNumber": {
+                "path": "/regions/number/{number}",
+                "method": "get",
+                "description": "Get Region by RegionNumber",
+                "expect": "200 ok"
+            },
+            "getAssethosts": {
+                "path": "/assethosts?regionId={regionId}&layerId=2",
+                "method": "get",
+                "description": "all assethosts",
+                "expect": "assethosts array"
+            },
+            "getRootIdentities": {
+                "path": "/identities/root",
+                "method": "get",
+                "description": "all root identities",
+                "expect": "root identities array"
+            },
+            "createAdminIdentity": {
+                "path": "/identities/admin",
+                "method": "post",
+                "description": "Create New Admin Identity",
+                "expect": "regions array"
+            },
+            "getSecret": {
+                "path": "/identities/{identityId}/secrets",
+                "method": "post",
+                "description": "Create New Secret For Admin Identity",
+                "expect": "200 ok"
+            },
+            "getAdminIdentities": {
+                "path": "/identities/admin",
+                "method": "get",
+                "description": "Get All Admin Identities",
+                "expect": "200 ok"
+            },
+            "updatePubkey": {
+                "path":
+                    "/identities/{identityId}/secrets/{secretId}/pubkey/add",
+                "method": "post",
+                "description": "Update Public Key",
+                "expect": "200 ok"
+            },
+            "createHash": {
+                "path": "/tool/redbox/hash",
+                "method": "post",
+                "description": "Create Hash",
+                "expect": "200 ok"
+            },
+            "createSignature": {
+                "path": "/tool/redbox/signature?redBoxId={redBoxId}",
+                "method": "post",
+                "description": "Create Signature",
+                "expect": "200 ok"
+            },
+            "getPubkey": {
+                "path": "/tool/redbox/pubkey",
+                "method": "post",
+                "description": "Get Public Key",
+                "expect": "200 ok"
+            },
+            "getSaps": {
+                "path": "/saps",
+                "method": "get",
+                "description": "Get SAPs",
+                "expect": "200 ok"
+            },
+            "health": {
+                "path": "/health",
+                "method": "get",
+                "description": "check db scheme",
+                "expect": "200 ok"
+            },
+            "checkHealth": {
+                "path": "/health/env/regions/{regionId}",
+                "method": "get",
+                "description": "check if tables is filled for :regionId",
+                "expect": "200 ok"
+            },
+            "pushNodeIdentities": {
+                "path": "/settings/env/prepare/node/{regionId}",
+                "method": "post",
+                "description": "push all node-identities to iov for :regionId",
+                "expect": "200 ok"
+            },
+            "getIovAddress": {
+                "path": "/utils/iovaddres",
+                "method": "post",
+                "description": "Get Iov-Address",
+                "expect": "200 ok"
+            }
+        }
+    }
+}

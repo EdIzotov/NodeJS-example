@@ -1,0 +1,150 @@
+{
+    "tmp": {
+        "auth": {
+            "username": "qa_user",
+            "password": "qa_user"
+        },
+        "api": {
+            "login": {
+                "path": "/login",
+                "method": "post",
+                "description": "Get Access Token to South API",
+                "expect": ""
+            },
+            "createBanks": {
+                "path": "/banks?pushToIovFlag=true",
+                "method": "post",
+                "description": "Create bank",
+                "expect": ""
+            },
+            "deleteBanks": {
+                "path": "/banks",
+                "method": "delete",
+                "description": "Delete bank",
+                "expect": ""
+            },
+            "createPrivateIdentity": {
+                "path": "/identities/private?pushToIov=true",
+                "method": "post",
+                "description": "Create private identity",
+                "expect": ""
+            },
+            "createQR": {
+                "path": "/identities/{id}/secrets",
+                "method": "post",
+                "description": "Create QR for All Identity Accounts",
+                "expect": ""
+            },
+            "createAccount": {
+                "path": "/accounts/new?pushToIov=true",
+                "method": "post",
+                "description": "Create Account",
+                "expect": ""
+            },
+            "getAccount": {
+                "path": "/accounts/{id}",
+                "method": "get",
+                "description": "Get Account",
+                "expect": ""
+            },
+            "createClient": {
+                "path": "/clients?iovClient=false&gatewayClient=false",
+                "method": "post",
+                "description": "Create New Client",
+                "expect": ""
+            },
+            "becomeClient": {
+                "path": "/clients/{clientId}/become",
+                "method": "put",
+                "description": "Become A Client",
+                "expect": ""
+            },
+            "getRedboxes": {
+                "path": "/redboxes",
+                "method": "get",
+                "description": "Get All Red Boxes",
+                "expect": ""
+            },
+            "updateClientRedbox": {
+                "path": "/clients/{id}/redbox/update",
+                "method": "put",
+                "description": "Update One Red Box",
+                "expect": ""
+            }
+        }
+    },
+    "test": {
+        "auth": {
+            "username": "qa_user",
+            "password": "qa_user"
+        },
+        "api": {
+            "login": {
+                "path": "/login",
+                "method": "post",
+                "description": "Get Access Token to South API",
+                "expect": ""
+            },
+            "createBanks": {
+                "path": "/banks?pushToIovFlag=true",
+                "method": "post",
+                "description": "Create bank",
+                "expect": ""
+            },
+            "deleteBanks": {
+                "path": "/banks",
+                "method": "delete",
+                "description": "Delete bank",
+                "expect": ""
+            },
+            "createPrivateIdentity": {
+                "path": "/identities/private?pushToIov=true",
+                "method": "post",
+                "description": "Create private identity",
+                "expect": ""
+            },
+            "createQR": {
+                "path": "/identities/{id}/secrets",
+                "method": "post",
+                "description": "Create QR for All Identity Accounts",
+                "expect": ""
+            },
+            "createAccount": {
+                "path": "/accounts/new?pushToIov=true",
+                "method": "post",
+                "description": "Create Account",
+                "expect": ""
+            },
+            "getAccount": {
+                "path": "/accounts/{id}",
+                "method": "get",
+                "description": "Get Account",
+                "expect": ""
+            },
+            "createClient": {
+                "path": "/clients?iovClient=false&gatewayClient=false",
+                "method": "post",
+                "description": "Create New Client",
+                "expect": ""
+            },
+            "becomeClient": {
+                "path": "/clients/{clientId}/become",
+                "method": "put",
+                "description": "Become A Client",
+                "expect": ""
+            },
+            "getRedboxes": {
+                "path": "/redboxes",
+                "method": "get",
+                "description": "Get All Red Boxes",
+                "expect": ""
+            },
+            "updateClientRedbox": {
+                "path": "/clients/{id}/redbox/update",
+                "method": "put",
+                "description": "Update One Red Box",
+                "expect": ""
+            }
+        }
+    }
+}

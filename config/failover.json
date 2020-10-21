@@ -1,0 +1,70 @@
+{
+    "tmp": {
+        "cassandra": ["134.213.219.174"],
+        "ahg": ["134.213.219.108"],
+        "core": {
+            "sharders": ["162.13.81.25"],
+            "shards": ["192.168.10.10"],
+            "publisher": ["162.13.81.92"]
+        },
+        "fanOut": ["134.213.219.129"],
+        "cbs": {
+            "hosts": ["134.213.219.131"],
+            "api": {
+                "proto": "http://",
+                "port": 9000
+            }
+        },
+        "sap": {
+            "hosts": ["134.213.219.158"],
+            "api": {
+                "proto": "ws://",
+                "port": 8002,
+                "path": "/ws"
+            }
+        },
+        "commands": {
+            "restart": {
+                "ahg": "sudo systemctl restart iov@ahg.service"
+            }
+        }
+    },
+    "test": {
+        "cassandra": [],
+        "ahg": [
+            "ahg-1.cot.test.XXX",
+            "ahg-2.cot.test.XXX",
+            "ahg-3.cot.test.XXX"
+        ],
+        "core": {
+            "sharders": [],
+            "shards": [],
+            "publisher": []
+        },
+        "fanOut": [],
+        "cbs": {
+            "hosts": [
+                "cbs-1.cot.test.XXX",
+                "cbs-2.cot.test.XXX",
+                "cbs-3.cot.test.XXX"
+            ],
+            "api": {
+                "proto": "https://",
+                "port": 9400
+            }
+        },
+        "sap": {
+            "hosts": ["sap-1.cot.test.XXX"],
+            "api": {
+                "proto": "wss://",
+                "port": 8402,
+                "path": "/ws"
+            }
+        },
+        "commands": {
+            "restart": {
+                "ahg": "sudo systemctl restart iov@ahg.service"
+            }
+        }
+    }
+}

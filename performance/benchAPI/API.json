@@ -1,0 +1,26 @@
+{
+  "development": {
+    "url": "https://performance-1.cot.dev.XXX",
+    "credentials": {
+      "username": "benchmark_UsEr",
+      "password": "Yfg34feBjh5%265gs*"
+    },
+    "api": {
+      "auth": {
+        "path": "/auth",
+        "method": "POST",
+        "description": "Authentication"
+      },
+      "addJob": {
+        "path": "/gearman/addJob.json",
+        "method": "POST",
+        "description": "Add new job"
+      },
+      "jobStatus": {
+        "path": "/gearman/jobStatus.json",
+        "method": "GET",
+        "description": "Get job status"
+      }
+    }
+  }
+}

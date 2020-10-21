@@ -1,0 +1,44 @@
+{
+    "test": {
+        "url": "http://ahg-1.cot.test.XXX:8000",
+        "auth": {
+            "username": "admin",
+            "password": "pass"
+        },
+        "api": {
+            "getBanksMappings": {
+                "path": "/ahg/admin/bank",
+                "method": "get",
+                "description": "all mappings",
+                "expect": "banks array"
+            },
+            "createIdentity": {
+                "path": "/ahg/identity",
+                "method": "post",
+                "description": "Identity creation",
+                "expect": "body(200 OK)"
+            }
+        }
+    },
+    "tmp": {
+        "url": "http://134.213.29.190:8000",
+        "auth": {
+            "username": "admin",
+            "password": "pass"
+        },
+        "api": {
+            "getBanksMappings": {
+                "path": "/ahg/admin/bank",
+                "method": "get",
+                "description": "all mappings",
+                "expect": "banks array"
+            },
+            "createIdentity": {
+                "path": "/ahg/identity",
+                "method": "post",
+                "description": "Identity creation",
+                "expect": "body(200 OK)"
+            }
+        }
+    }
+}

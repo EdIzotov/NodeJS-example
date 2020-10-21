@@ -1,0 +1,18 @@
+# for openstack/rackspace env
+cbs_host=162.13.141.119:9000
+sap_host=162.13.81.178:8002
+admin_portal_host=162.13.141.119:9000
+region_id=0
+ahg_host=192.168.0.134:8000
+redbox_host=162.13.141.119:9090
+sc_host=162.13.81.178:8002
+
+# for k8s env
+api_gateway_host=api-gateway.test4.dev-1.XXX:80
+cbs_host=cbs-backend.test4.dev-1.XXX:80
+sap_host=sap.test4.dev-1.XXX:80
+admin_portal_host=admin-portal-backend.test4.dev-1.XXX:80
+region_id=0
+ahg_host=ahg.test4.dev-1.XXX:80
+redbox_host=192.168.0.56:9090
+sc_host=sap.test4.dev-1.XXX:80

@@ -1,0 +1,42 @@
+{
+    "development": {
+        "CBS": {
+            "url": ["https://cbs-2.cot.dev.XXX"],
+            "port": 9400,
+            "swagger": "/swagger.json",
+            "username": "qa_user",
+            "password": "qa_user"
+        }
+    },
+    "production": {
+        "CBS": {
+            "url": ["http://cbs-3.cot.primer.XXX"],
+            "port": 9000,
+            "swagger": "/swagger.json",
+            "username": "qa_user",
+            "password": "qa_user"
+        }
+    },
+    "test": {
+        "CBS": {
+            "url": [
+                "https://cbs-1.cot.test.XXX",
+                "https://cbs-2.cot.test.XXX",
+                "https://cbs-3.cot.test.XXX"
+            ],
+            "port": 9400,
+            "swagger": "/swagger.json",
+            "username": "qa_user",
+            "password": "qa_user"
+        }
+    },
+    "tmp": {
+        "CBS": {
+            "url": ["http://162.13.178.209"],
+            "port": 9000,
+            "swagger": "/swagger.json",
+            "username": "qa_user",
+            "password": "qa_user"
+        }
+    }
+}
